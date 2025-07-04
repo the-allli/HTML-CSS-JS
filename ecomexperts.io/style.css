@@ -15,18 +15,66 @@ body {
   color: white;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  height: 80px;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .navbar-logo {
+  align-content: center;
+}
+.nav-img {
   display: flex;
   align-items: center;
 }
 .navbar-text {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .navbar-text > h3 {
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
   line-height: 25.3px;
+}
+.navbar-right-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.navbar-right-menu-icon {
+  display: flex;
+}
+.navbar-right-menu-icon {
+  display: inline-block;
+  position: relative;
+  width: 34px;
+  height: 38px;
+  cursor: pointer;
+}
+.navbar-right-menu-icon svg {
+  max-width: 30px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.navbar-right-menu-icon .three {
+  transform-origin: right center;
+  transform: scaleX(0);
+  opacity: 0;
+}
+.navbar-right-menu-icon:hover .two {
+  opacity: 1;
+}
+.navbar-right-menu-icon:hover .three {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.navbar-right-menu > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25vw;
+  padding-top: 15px;
 }
