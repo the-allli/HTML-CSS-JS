@@ -78,3 +78,58 @@ body {
   font-size: 1.25vw;
   padding-top: 15px;
 }
+
+/* Hero */
+.hero {
+  height: 100vh;
+  padding-top: 18px;
+  /* background-color: aqua; */
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.hero-text {
+  padding: 5vw 6vw 4vw 0;
+}
+.hero-title {
+  font-size: 3.2vw;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.title_first_line {
+  display: block;
+}
+.sub_title {
+  display: block;
+  font-size: 3.4vw;
+}
+.bold_title {
+  font-size: 5.3vw;
+}
+.text {
+  font-size: 1.23vw;
+  letter-spacing: 0;
+  max-width: 39vw;
+  margin: 2vw 0px;
+  line-height: 150%;
+}
+.talk_btn {
+  text-transform: uppercase;
+  background: #ffc001;
+  font-size: 1.6vw;
+  height: 5.138vw;
+  padding-inline: 2vw;
+  letter-spacing: 0.02em;
+  border: 0px;
+  margin-top: 2.431vw;
+}
+.talk_btn > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  font-style: normal;
+}
