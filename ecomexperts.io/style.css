@@ -87,6 +87,9 @@ body {
 .hero-container {
   display: flex;
   padding: 0 5rem;
+  height: 100vh;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 /* LHS */
@@ -144,6 +147,25 @@ body {
 /* RHS */
 .grid-container {
   width: 45%;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes vertical-marquee {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  animation: vertical-marquee 20s linear infinite;
+  height: auto;
+  will-change: transform;
 }
 .marquee-inner-block {
   gap: 0.694vw;
@@ -184,8 +206,7 @@ body {
   font-weight: 450;
 }
 .right-marquee {
-  position: relative;
-  top: 3.472vw;
+  margin-top: 3.472vw;
 }
 
 /* talk-amrquee */
@@ -200,6 +221,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  z-index: 2;
 }
 .talk-marquee a {
   display: flex;
