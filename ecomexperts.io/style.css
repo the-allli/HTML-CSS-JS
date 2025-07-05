@@ -187,3 +187,57 @@ body {
   position: relative;
   top: 3.472vw;
 }
+
+/* talk-amrquee */
+.talk-marquee {
+  color: #000;
+  font-size: 1.667vw;
+  line-height: 4.861vw;
+  font-weight: 700;
+  text-align: center;
+  background: #121212;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.talk-marquee a {
+  display: flex;
+  gap: 40px;
+  text-decoration: none;
+  color: white;
+}
+@keyframes marqueeSlide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.talk-marquee-text {
+  display: inline-flex;
+  height: 5.833vw;
+  animation: marqueeSlide 20s linear infinite;
+}
+.marqqq-flex {
+  display: inline-flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.mrqq-text {
+  font-size: 1.667vw;
+  color: #fff;
+  font-family: circular std;
+  font-weight: 450;
+  position: relative;
+}
+.f_index {
+  display: inline-block;
+  font-weight: 450;
+  font-size: 1.2vw;
+  position: absolute;
+  left: -20px;
+  top: -8px;
+}
