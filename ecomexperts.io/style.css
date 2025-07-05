@@ -133,3 +133,11 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+.hover-effect {
+  transition: all 500ms linear;
+}
+
+.hover-effect:hover {
+  box-shadow: -1px 0 1px rgba(0, 0, 0, 0.4), 1px 0 1px rgba(0, 0, 0, 0.4),
+    0 3px 3px rgba(0, 0, 0, 0.4); /* transform: translateY(-3px); */
+}
